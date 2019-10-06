@@ -16,3 +16,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_kiwi.mk \
     $(LOCAL_DIR)/lineage_kiwi.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_kiwi-user \
+    lineage_kiwi-userdebug \
+    lineage_kiwi-eng
