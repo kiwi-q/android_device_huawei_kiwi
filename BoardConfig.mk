@@ -173,10 +173,6 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/signinfolistener|libshim_signinfolistener.so:\
     /system/vendor/lib/libmmcamera_hdr_gb_lib.so|/system/vendor/lib/libmmqjpeg_codec.so
 
-# Vendor Init
-TARGET_INIT_VENDOR_LIB := libinit_kiwi
-TARGET_RECOVERY_DEVICE_MODULES := libinit_kiwi
-
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
