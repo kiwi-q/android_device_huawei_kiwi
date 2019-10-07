@@ -17,6 +17,9 @@ DEVICE_PATH := device/huawei/kiwi
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -163,10 +166,10 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
+#include device/qcom/sepolicy-legacy/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += \
-#    device/huawei/kiwi/sepolicy
+BOARD_SEPOLICY_DIRS += \
+    device/huawei/kiwi/sepolicy-tmp
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
