@@ -28,6 +28,7 @@ ro.bluetooth.sap=true
 ro.qualcomm.bt.hci_transport=smd
 vendor.qcom.bluetooth.soc=smd
 vendor.bluetooth.soc=smd
+persist.bluetooth.bluetooth_audio_hal.disabled=true
 
 # Camera
 persist.camera.cpp.duplication=false
