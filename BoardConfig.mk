@@ -172,6 +172,7 @@ TARGET_LD_SHIM_LIBS := \
 
 # Vendor Init
 TARGET_INIT_VENDOR_LIB := libinit_kiwi
+TARGET_RECOVERY_DEVICE_MODULES := libinit_kiwi
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
